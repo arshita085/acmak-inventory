@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'apps.products.apps.ProductsConfig',
-    'apps.organizations.apps.OrganizationsConfig',  
+    'apps.organizations.apps.OrganizationsConfig',
+    'apps.warehouses.apps.WarehousesConfig',  
+    'apps.inventory.apps.InventoryConfig',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'config.urls'
